@@ -13,12 +13,6 @@ public enum Adress {
     Adress(String name) {
 
     }
-
-
-
-
-
-
     public String getName() {
         return name;
     }
