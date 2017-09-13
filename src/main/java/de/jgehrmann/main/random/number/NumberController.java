@@ -7,16 +7,12 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class NumberController {
 
-    @RequestMapping(path = "/int", method = RequestMethod.GET)
-    public int randomInteger() {
-        return RandomNumberGenerator.generateInteger();
-    }
-
-    @RequestMapping(path = "/int", method = RequestMethod.GET)
-    public int randomInteger(@RequestParam(value = "size", defaultValue = "10") String size) {
-        return RandomNumberGenerator.generateInteger(Integer.parseInt(size), 0);
-    }
-
+    /**
+     * Defines an endpoint where you can request random numbers using a range between min and max.
+     * @param min minimal value
+     * @param max maximum value
+     * @return The generated Random number.
+     */
     @RequestMapping(path = "/int", method = RequestMethod.GET)
     public int randomInteger(@RequestParam(value = "min", defaultValue = "0") String min, @RequestParam(value = "max", defaultValue = "10") String max) {
         return RandomNumberGenerator.generateInteger(Integer.parseInt(max), Integer.parseInt(min));
