@@ -3,7 +3,7 @@ package de.jgehrmann.main.utils;
 
 import java.util.Random;
 
-public class RandomNumberGenerator {
+public class RandomIntegerGenerator {
     public static int generateInteger(int max, int min) {
         Random generator = new Random();
         return (generator.nextInt(max) + min);
