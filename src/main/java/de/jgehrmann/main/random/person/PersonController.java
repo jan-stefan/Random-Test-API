@@ -1,4 +1,4 @@
-package de.jgehrmann.main.random.color;
+package de.jgehrmann.main.random.person;
 
 import com.github.javafaker.Faker;
 import de.jgehrmann.main.utils.RandomIntegerGenerator;
@@ -12,10 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @CrossOrigin
-public class ColorController {
+public class PersonController {
 
-    @RequestMapping(path = "/color-name",method = RequestMethod.GET)
-    public String randomColor(){
-        return new Faker().color().name();
+    @RequestMapping(path = "/person",method = RequestMethod.GET)
+    public Person randomPerson(){
+        Faker faker = new Faker();
+        RandomIntegerGenerator randomInteger = new RandomIntegerGenerator();
+
+        return null;
     }
 }
