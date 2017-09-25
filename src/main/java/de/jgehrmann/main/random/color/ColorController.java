@@ -1,6 +1,7 @@
-package de.jgehrmann.main.random.country;
+package de.jgehrmann.main.random.color;
 
 import com.github.javafaker.Faker;
+import de.jgehrmann.main.utils.RandomIntegerGenerator;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -11,11 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @CrossOrigin
-public class CountryController {
+public class ColorController {
 
-    @RequestMapping(path = "/country", method = RequestMethod.GET)
-    public String randomCountry(){
+    @RequestMapping(path = "/color-name",method = RequestMethod.GET)
+    public String randomColor(){
         Faker faker = new Faker();
-        return faker.address().country();
+        return faker.color().name();
     }
 }
