@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.print.attribute.HashPrintJobAttributeSet;
+
 /**
  * Created by jgehrmann on 25.09.17.
+ * todo:implement.
  */
 @RestController
 @CrossOrigin
@@ -18,7 +21,6 @@ public class PersonController {
     public Person randomPerson(){
         Faker faker = new Faker();
         RandomIntegerGenerator randomInteger = new RandomIntegerGenerator();
-
         return null;
     }
 }
