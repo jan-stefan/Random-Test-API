@@ -28,7 +28,6 @@ public class AdressController {
         String street = faker.address().streetName();
         String number = faker.address().buildingNumber();
 
-        AdressDTO adress = new AdressDTO(prename,surname,place,country,postalCode,street,number);
-        return adress;
+        return new AdressDTO(prename,surname,place,country,postalCode,street,number);
     }
 }
