@@ -6,15 +6,13 @@ package de.jgehrmann.main.random.person;
 public class Person {
     private String firstname;
     private String lastname;
-    private String job;
     private int age;
     private int height;
     private int weight;
 
-    public Person(String firstname, String lastname, String job, int age, int height, int weight) {
+    public Person(String firstname, String lastname, int age, int height, int weight) {
         this.firstname = firstname;
         this.lastname = lastname;
-        this.job = job;
         this.age = age;
         this.height = height;
         this.weight = weight;
@@ -26,10 +24,6 @@ public class Person {
 
     public String getLastname() {
         return lastname;
-    }
-
-    public String getJob() {
-        return job;
     }
 
     public int getAge() {

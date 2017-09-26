@@ -17,10 +17,16 @@ import javax.print.attribute.HashPrintJobAttributeSet;
 @CrossOrigin
 public class PersonController {
 
-    @RequestMapping(path = "/person",method = RequestMethod.GET)
-    public Person randomPerson(){
+    @RequestMapping(path = "/person", method = RequestMethod.GET)
+    public Person randomPerson() {
         Faker faker = new Faker();
-        RandomIntegerGenerator randomInteger = new RandomIntegerGenerator();
-        return null;
+        String firstname = faker.name().firstName();
+        String lastname = faker.name().lastName();
+
+        int age = RandomIntegerGenerator.generateInteger(100, 1);
+        int height = RandomIntegerGenerator.generateInteger(230, 60);
+        int weight = RandomIntegerGenerator.generateInteger(300, 45);
+
+        return new Person(firstname, lastname, age, height, weight);
     }
 }
