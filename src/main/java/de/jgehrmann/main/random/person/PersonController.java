@@ -11,7 +11,6 @@ import javax.print.attribute.HashPrintJobAttributeSet;
 
 /**
  * Created by jgehrmann on 25.09.17.
- * todo:implement.
  */
 @RestController
 @CrossOrigin
