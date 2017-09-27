@@ -10,23 +10,23 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
 
     /**
-     * Defines a endpoint to test your authentication mechanism.
+     * Defines a endpoint to test your Authorization mechanism.
      *
-     * @param authentication header containing username:password
+     * @param authorization header containing username:password
      * @return successmessage
      */
-    @RequestMapping(path = "/authenticate", method = RequestMethod.GET)
-    public String authenticate(@RequestHeader(value = "authentication") String authentication) {
+    @RequestMapping(path = "/authorization", method = RequestMethod.GET)
+    public String authenticate(@RequestHeader(value = "authorization") String authorization) {
 
-        if (!authentication.isEmpty() && !authentication.equals("")) {
+        if (!authorization.isEmpty() && !authorization.equals("")) {
 
-        String creadentials[] = authentication.split(":");
+        String creadentials[] = authorization.split(":");
         String username = creadentials[0];
         String passphrase = creadentials[1];
 
-        return new String("You tried to authenticate using the following header: \nHeadername: authentication\nusername: " + username + "\npassphrase: " + passphrase);
+        return new String("You tried to authenticate using the following header: \nHeadername: Authorization\nusername: " + username + "\npassphrase: " + passphrase);
         }else {
-            return "Please specify a authentication header to test your basic auth mechanism.";
+            return "Please specify a Authorization header to test your basic auth mechanism.";
         }
     }
 }
