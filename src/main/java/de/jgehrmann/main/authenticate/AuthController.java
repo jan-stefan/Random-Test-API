@@ -20,12 +20,12 @@ public class AuthController {
 
         if (!authorization.isEmpty() && !authorization.equals("")) {
 
-        String creadentials[] = authorization.split(":");
-        String username = creadentials[0];
-        String passphrase = creadentials[1];
+            String creadentials[] = authorization.split(":");
+            String username = creadentials[0];
+            String passphrase = creadentials[1];
 
-        return new String("You tried to authenticate using the following header: \nHeadername: Authorization\nusername: " + username + "\npassphrase: " + passphrase);
-        }else {
+            return "You tried to authenticate using the following header: \nHeadername: Authorization\nusername: " + username + "\npassphrase: " + passphrase;
+        } else {
             return "Please specify a Authorization header to test your basic auth mechanism.";
         }
     }
