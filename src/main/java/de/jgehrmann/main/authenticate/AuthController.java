@@ -18,7 +18,7 @@ public class AuthController {
     @RequestMapping(path = "/authenticate", method = RequestMethod.GET)
     public String authenticate(@RequestHeader(value = "authentication") String authentication) {
 
-        if (authentication.isEmpty() && !authentication.equals("")) {
+        if (!authentication.isEmpty() && !authentication.equals("")) {
 
         String creadentials[] = authentication.split(":");
         String username = creadentials[0];
