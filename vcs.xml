@@ -10,8 +10,12 @@
           <option name="url" value="http://github.com" />
           <option name="userName" value="stuffel95" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/spring-guides/gs-crud-with-vaadin.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/workspace/randomRest" />
+    <option name="cloneParentDir" value="$USER_HOME$/workspace/Spring-vaadin-test" />
   </component>
 </application>
