@@ -1,5 +1,5 @@
 <templateSet group="Java">
-  <template name="utt" value="//Setup&#10;        &#10;//Test&#10;        &#10;//Expectations" toReformat="false" toShortenFQNames="true">
+  <template name="utt" value="//Setup&#10;        &#10;//Test&#10;        &#10;//Expectations" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
