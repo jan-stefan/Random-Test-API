@@ -18,8 +18,12 @@
           <option name="url" value="https://jan-stefan@bitbucket.exchangeserv.de/scm/ar/artereosvalley.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/stuffel95/ArtereosValley.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/workspace/artereosValley" />
+    <option name="cloneParentDir" value="$USER_HOME$/workspace/arTest" />
   </component>
 </application>
